@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------------------------------
+ * main.css
+ * Hassadee Pimsuwan
+ * Create: 29 May 2011
+ * Version 1.0 (29 May 2011)
+ * Licensed under GNU GPLv2 (c) Hassadee Pimsuwan
+ * For Bitmanagement Software GmbH (VRML Conformance Test Page)
+ * ------------------------------------------------------------------------------------
+ * ___   ___   ____     _____    _____    ____    ____    _____   _____
+ * | |   | |  / __ \   / ___/   / ___/   / __ \  |  _ \  | ____| | ____|
+ * | |___| | | |__| | | |___   | |___   | |__| | | | | | | |___  | |___
+ * |  ___  | |  __  |  \___ \   \___ \  |  __  | | | | | |  ___| |  ___|
+ * | |   | | | |  | |  ____| |  ____| | | |  | | | |_| | | |___  | |___
+ * |_|   |_| |_|  |_|  \____/   \____/  |_|  |_| |____/  |_____| |_____|
+ * Hassadee Pimsuwan - http://www.hapztron.co.nr
+ * ------------------------------------------------------------------------------------
+*/
+
+html, body {
+	font-family: "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #D4D4D4;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F8F8F8;
+	text-shadow: 0px 1px 5px #000;
+}
+
+a {
+	margin-top: 2px;
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+/* Link Color */
+a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+a:hover, a:focus, a:active {
+	border: 0;
+	color: #FF9933;
+	text-decoration:none;
+}
+
+.container {
+	width: 108px;
+	padding: 0 0 10px;
+	margin: 0 auto 30px;
+}
+
+.header {
+	border-bottom:1px solid #ddd;
+}
+
+.menu {
+	padding: 10px 0 30px
+	border-top: 1px solid #ddd;
+	margin-bottom: 0;
+	font-size: 20px;
+	color: #d9d9d9;
+	text-shadow: 0px 1px 5px #000;
+}
+
+h1 {
+	margin: 0 0 10px 10px;
+	margin-top: 30px;
+	font-size: 60px; 
+	font-weight: normal;
+	line-height: 80px;
+	/* color: #24ADE2; Blue */
+	color: #FF9933;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+h2 {
+	margin: 0 0 10px 10px;
+	margin-top: 30px;
+	/* font-family: "Helvetica Neue"; */
+	font-size: 45px;
+	font-weight: normal;
+	color: #0099FF;
+	text-shadow: 0px 1px 5px #000000;
+}
+
+h3 {
+	margin: 0 0 10px 0px;
+	margin-top: 20px;
+	font-family: "Helvetica Neue";
+	font-size: 30px;
+	font-weight: normal;
+	color: #F8F8F8;
+	text-shadow: 0px 1px 5px #000;
+}
+
+p {
+	margin: 0 0 0px 90px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F8F8F8;
+	text-shadow: 0px 1px 5px #000;
+}
+
+li {
+	font-size: 18px;
+	line-height: 20px;
+	color: #F8F8F8;
+	text-shadow: 0px 1px 5px #000;
+}
+
+pre {
+	margin:1.4em 0;
+	font-size:12px;
+	line-height:1.4em;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+}
+
+.hp_body {
+	/* General */
+	position: absolute;
+	left: 80px;
+	top: 10px;
+	width: 1080px;
+	padding: 1em 1.5em;
+	color: #FFFFFF;
+	/*
+	background-color: #D4D4D4;
+	background-image: -moz-linear-gradient(top, #FFFFFF, #D4D4D4);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#D4D4D4));
+	background-image: -webkit-linear-gradient(#FFFFFF, #D4D4D4);
+	background-image: -o-linear-gradient(#FFFFFF, #D4D4D4);
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#D4D4D4', GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#D4D4D4)";
+	*/
+
+}
+

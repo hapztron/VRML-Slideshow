@@ -1,0 +1,381 @@
+#VRML V2.0 utf8
+
+# bs_metro.wrl
+# Design: Abstract Art Design with 2D Nodes.
+# Colors Concept: RGB Shining
+# Feb, 2011
+# Hassadee Pimsuwan, silkzter@gmail.com
+# Intern Student,
+# Bitmanagement Software GmbH
+
+EXTERNPROTO Background2D[
+  eventIn      SFBool   set_bind
+  exposedField SFColor  backColor
+  exposedField MFString url
+  eventOut     SFBool   isBound
+]
+[
+  "urn:inet:bitmanagement.de:node:Background2D",
+  "http://www.bitmanagement.de/protos/nodes.wrl#Background2D"
+]
+
+EXTERNPROTO Transform2D { 
+  	eventIn      	MFNode  	addChildren 
+  	eventIn      	MFNode  	removeChildren 
+  	exposedField	MFNode  	children 
+  	exposedField 	SFVec2f 	center 
+  	exposedField 	SFFloat 	rotationAngle 
+  	exposedField 	SFVec2f 	scale 
+  	exposedField 	SFFloat 	scaleOrientation 
+  	exposedField 	SFVec2f 	translation 
+]
+[
+  	"urn:inet:bitmanagement.de:node:Transform2D",
+  	"http://www.bitmanagement.de/vrml/protos/nodes.wrl#Transform2D",
+]
+
+EXTERNPROTO Rectangle[
+  exposedField SFVec2f size
+]
+[
+  "urn:inet:bitmanagement.de:node:Rectangle",
+  "http://www.bitmanagement.de/vrml/protos/nodes.wrl#Rectangle",
+]
+
+WorldInfo{
+ 	title "BS_Metro"
+ 	info [
+		"Example in BS SDK : Content Authoring : Node Extensions :
+			Background2D
+			Coordinate2D
+			ImageTexture
+			IndexedFaceSet2D
+			Material2D
+			Rectangle
+			Transform2D
+		"
+	]
+}
+
+
+# Background2D Node Example
+Background2D { backColor 1.0 1.0 1.0 }
+
+# Navigation
+NavigationInfo { 
+	type [ "EXAMINE" "ANY" ]
+}
+
+# Viewpoint (At the first cube [1 1])
+Viewpoint {
+	position 45 0 70
+	orientation -0.998 0.060 0.007 0.252
+}
+
+# Fog
+Fog {
+  color 0.9 0.9 1.0
+  visibilityRange 2000
+}
+
+# CircleGroup 1 1
+DEF CircleGroup Group {
+	children [
+		#DEF CubeTransfrom Transform {
+		Transform {
+			rotation 0 1 0 0.78
+			children [
+
+			# Transform2D Node Example
+			# Setup GreenCircle for Inherit
+			# DEF GreenCircleWell that include 10x, 10y of GreeCirclePack.
+			# Wall 1 Front
+			DEF GreenCircleWall Transform {
+				translation 0 0 0
+				children [
+					# DEF GreenCircleLine is circle line that contained 10 circles for a line.
+					# Begin: Generate GreenCircleLine
+					# Line 1
+					DEF GreenCircleLine Transform {
+						children [
+							# Begin: DEF GreenCircle
+							# Circle 1
+							DEF GreenCircle Transform2D {
+								scale 2 2
+								children [
+									Shape {
+										appearance Appearance { 
+											material Material {
+												diffuseColor 0.2 0.8 0.4 specularColor 0.0 1.0 0.2
+											}
+										}
+										geometry Circle {
+											radius 5
+										}
+									}
+								] # End: Children GreenCircle
+							} # End: DEF GreenCircle
+						
+							DEF PLRed PointLight {
+								ambientIntensity 1
+								location 0 0 0
+								color 0.2 0.2 1.0
+								radius 20
+							}
+							
+							# Begin: Inherit DEF GreenCircle
+							
+							# Circle 2
+							Transform {
+								translation 25 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 3
+							Transform {
+								translation 50 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 4
+							Transform {
+								translation 75 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 5
+							Transform {
+								translation 100 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 6
+							Transform {
+								translation 125 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 7
+							Transform {
+								translation 150 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 8
+							Transform {
+								translation 175 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 9
+							Transform {
+								translation 200 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+							
+							# Circle 10
+							Transform {
+								translation 225 0 0
+								children [
+									USE GreenCircle
+									USE PLRed
+								]
+							}
+						] # End: children GreenCircleLine
+					} # End: GreenCircleLine
+					#End: Generate 1st line. (10 circles)
+					
+					#Begin: Inherit from 1st line.
+					
+					# Line 2
+					Transform {
+						translation 0 -25 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 3
+					Transform {
+						translation 0 -50 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 4
+					Transform {
+						translation 0 -75 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 5
+					Transform {
+						translation 0 -100 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 6
+					Transform {
+						translation 0 -125 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 7
+					Transform {
+						translation 0 -150 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 8
+					Transform {
+						translation 0 -175 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 9
+					Transform {
+						translation 0 -200 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+					
+					# Line 10
+					Transform {
+						translation 0 -225 0
+						children [
+							USE GreenCircleLine
+						]
+					}
+				] # End: Children GreenCircleWall
+			} # End: DEF GreenCircleWall
+
+			# Wall 2 Rear
+			Transform {
+				translation 0 0 -275
+				children [
+					USE GreenCircleWall
+				]
+			}
+
+			# Wall 3 Left
+			Transform {
+				translation -25 0 -25
+				rotation 0 1 0 1.57
+				children [
+					USE GreenCircleWall
+				]
+			}
+
+			# Wall 4 Right
+			Transform {
+				translation 250 0 -25
+				rotation 0 1 0 1.57
+				children [
+					USE GreenCircleWall
+				]
+			}
+
+			# Wall 5 Top
+			Transform {
+				translation 0 25 -25
+				rotation 1 0 0 1.57
+				children [
+					USE GreenCircleWall
+				]
+			}
+
+			# Wall 6 Down
+			Transform {
+				translation 0 -250 -25
+				rotation 1 0 0 1.57
+				children [
+					USE GreenCircleWall
+				]
+			}
+	
+		] # End: Transform's Children
+		} # End: Transfrom
+	] #	End: Group's Children
+} #	End: Group
+
+
+# CircleGroup 1 2
+Transform {
+	translation 500 0 0
+	children [
+		USE CircleGroup
+	]
+}
+
+
+# CircleGroup 2 1
+Transform {
+	translation 0 0 -500
+	children [
+		USE CircleGroup
+	]
+}
+
+# CircleGroup 2 2
+Transform {
+	translation 500 0 -500
+	children [
+		USE CircleGroup
+	]
+}
+
+# Material2D and Rectangle Nodes Example
+# Generate Rectangle
+
+# Begin: DEF BlueRectangle
+# Genarate: Rectangle 1
+Transform {
+	translation 250 -275 -450
+	rotation 1 0 0 1.57
+	children [
+		DEF BlueRectangle Shape {
+			appearance Appearance {
+				material Material2D {
+					emissiveColor 0.2 0.8 1.0  filled TRUE
+				}
+			}
+			geometry Rectangle { size 1200 1200 }
+		} # End: DEF BlueRectangle
+	] # End: Children
+} # End: Transform
