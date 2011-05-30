@@ -4,26 +4,18 @@
 	
 	<Entry>
 		<Enabled>True</Enabled>
-		<Title>Xiaoling Tomb of the Ming Dynasty</Title>
-		<Author>m17design</Author>
-		<Link>http://www.bitmanagement.de/demo/m17/mingxiaoling/index.wrl</Link>
-		<Ref href="http://www.bitmanagement.de/demo/m17/mingxiaoling/index.wrl"/>
-	</Entry>
-
-	<Entry>
-		<Enabled>True</Enabled>
-		<Title>blaxxun Home World</Title>
-		<Author>Holger Grahn</Author>
-		<Link>http://www.blaxxun.de/vrml/home/home.wrl</Link>
-		<Ref href="http://www.blaxxun.de/vrml/home/home.wrl" />
-	</Entry>
-
-	<Entry>
-		<Enabled>True</Enabled>
 		<Title>BS Metropolis</Title>
 		<Author>Hassadee Pimsuwan</Author>
 		<Link>testing_files/bs_metro.wrl</Link>
-		<Ref href="./testing_files/bs_metro.wrl" />
+		<Ref href="testing_files/bs_metro.wrl" />
+	</Entry>
+
+	<Entry>
+		<Enabled>True</Enabled>
+		<Title>Avatar: User Avatar</Title>
+		<Author>Brezhnyev Kirill</Author>
+		<Link>http://sdk.bitmanagement.com/sdk_data/demos/avatar/package_01/avatar_rigid_doll.wrl</Link>
+		<Ref href="http://sdk.bitmanagement.com/sdk_data/demos/avatar/package_01/avatar_rigid_doll.wrl" />
 	</Entry>
 
 </Playlist>
