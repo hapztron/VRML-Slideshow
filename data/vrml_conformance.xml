@@ -26,12 +26,4 @@
 		<Ref href="./testing_files/bs_metro.wrl" />
 	</Entry>
 
-	<Entry>
-		<Enabled>True</Enabled>
-		<Title></Title>
-		<Author></Author>
-		<Link></Link>
-		<Ref href="" />
-	</Entry>
-
 </Playlist>
