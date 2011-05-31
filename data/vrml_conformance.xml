@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <Playlist>
-	<Duration-default>10</Duration-default>
+
+	<Page-name>VRML-Conformance</Page-name>
+	<Duration-default>5</Duration-default>
 	
 	<Entry>
 		<Enabled>True</Enabled>

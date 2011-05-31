@@ -17,8 +17,10 @@
 		xmlhttp.open("GET","data/vrml_conformance.xml",false);
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML;
-		/* "duration" is read default duration time to change between VRML scenes */
+		/* "duration" is read default duration time to change between VRML scenes. */
 		duration = xmlDoc.getElementsByTagName("Duration-default")[0].childNodes[0].nodeValue;
+		/* "pagename" is read "Page-name" from XML file, It's a name of VRML scenes list. */
+		pagename = xmlDoc.getElementsByTagName("Page-name")[0].childNodes[0].nodeValue;
 		x = xmlDoc.getElementsByTagName("Entry");
 
 		/*
@@ -41,7 +43,7 @@
 			link = (x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue);
 			vrmldata = "<embed width='100%' height='320px' name='vrml_conformance' src='" + link + "' type='model/vrml'></embed>";
 			txt = "Info: " + enabled + " | " + title + " | " + author + " | " + link ;
-			/* TODO: Data will show until i < x.length */
+			/* TODO: Data will show until i < x.length in show information div */
 			document.getElementById("showData").innerHTML = vrmldata + txt;
 		}
 		
@@ -72,9 +74,19 @@
 </head>
 <body onload="displayData()">
 	<div class="hp_body">
-		<h1>VRML-Slide</h1>
+		<h1>VRML-Slide</h2>
+		<script type="text/javascript">
+			document.write("<h2>" + pagename + "</h2>");
+		</script>
 		<!-- Show VRML Scene and Information of that scene from displayData(); function. -->
 		<div id="showData"></div>
+
+		<!-- Footer -->
+		<hr />
+		<center>
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hapztron">Tweet</a>
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</center>
 	</div>
 </body>
 </html>
