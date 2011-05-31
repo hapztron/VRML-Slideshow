@@ -74,7 +74,6 @@
 </head>
 <body onload="displayData()">
 	<div class="hp_body">
-		<h1>VRML-Slide</h2>
 		<script type="text/javascript">
 			document.write("<h2>" + pagename + "</h2>");
 		</script>
@@ -83,10 +82,11 @@
 
 		<!-- Footer -->
 		<hr />
-		<center>
-			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hapztron">Tweet</a>
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		</center>
+		<!-- Twitter's Tweet Botton -->	
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="hapztron">Tweet</a>
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<!-- Facebook's Like Botton -->
+		<iframe src="http://www.facebook.com/plugins/like.php?app_id=113980695355311&amp;href=http%3A%2F%2Fwww.hapztron.co.nr%2Fvrml-slide&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:60px;" allowTransparency="true"></iframe>
 	</div>
 </body>
 </html>
