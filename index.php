@@ -73,34 +73,8 @@
 <body onload="displayData()">
 	<div class="hp_body">
 		<h1>VRML-Slide</h1>
-
 		<!-- Show VRML Scene and Information of that scene from displayData(); function. -->
 		<div id="showData"></div>
-		
-		<!--
-		 ===== ShowData as table =====
-		 ShowData is will delete in next version of this program 
-		 Used displayData(); function to show data instead.
-		 "ShowData as table" is will move to standalone page.
-		-->
-		<!--
-		<script type="text/javascript">
-			document.write("<table border='1'>");
-				for (var n = 0; n < x.length; n++) {
-					document.write("<tr onclick='displayData(" + n + ")'>");
-					document.write("<td>");
-					document.write(x[n].getElementsByTagName("Enabled")[0].childNodes[0].nodeValue);
-					document.write("</td><td>");
-					document.write(x[n].getElementsByTagName("Title")[0].childNodes[0].nodeValue);
-					document.write("</td><td>");
-					document.write(x[n].getElementsByTagName("Author")[0].childNodes[0].nodeValue);
-					document.write("</td><td>");
-					document.write(x[n].getElementsByTagName("Link")[0].childNodes[0].nodeValue);
-					document.write("</td></tr>");
-				}
-			document.write("</table>");
-		</script>
-		-->
 	</div>
 </body>
 </html>
