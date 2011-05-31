@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Playlist>
-	<Duration-default>20</Duration-default>
+	<Duration-default>10</Duration-default>
 	
 	<Entry>
 		<Enabled>True</Enabled>
@@ -9,13 +9,21 @@
 		<Link>testing_files/bs_metro.wrl</Link>
 		<Ref href="testing_files/bs_metro.wrl" />
 	</Entry>
-
+	
 	<Entry>
 		<Enabled>True</Enabled>
-		<Title>Avatar: User Avatar</Title>
-		<Author>Brezhnyev Kirill</Author>
-		<Link>http://sdk.bitmanagement.com/sdk_data/demos/avatar/package_01/avatar_rigid_doll.wrl</Link>
-		<Ref href="http://sdk.bitmanagement.com/sdk_data/demos/avatar/package_01/avatar_rigid_doll.wrl" />
+		<Title>Unknown</Title>
+		<Author>Unknown</Author>
+		<Link>testing_files/exampleD6.wrl</Link>
+		<Ref href="testing_files/exampleD6.wrl" />
+	</Entry>
+	
+	<Entry>
+		<Enabled>True</Enabled>
+		<Title>Unknown</Title>
+		<Author>Unknown</Author>
+		<Link>testing_files/exampleD12.wrl</Link>
+		<Ref href="testing_files/exampleD12.wrl" />
 	</Entry>
 
 </Playlist>
