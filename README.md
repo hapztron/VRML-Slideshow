@@ -29,22 +29,23 @@ Use as slideshow
 1. Prepare your XML file. This file is contain Duration time for each slide, Title of VRML Scene, Author of that file and URL link to VRML scene.
 
 Create or contain this XML file in "data" folder.
+
 Example:
 
 	<?xml version="1.0" ?>
-	\<Playlist>
+	<Playlist>
 	
-	\<Page-name>VRML-Slide</Page-name>
-	\<Duration-default>5</Duration-default>
+	<Page-name>VRML-Slide</Page-name>
+	<Duration-default>5</Duration-default>
 
-	\<Entry>
-		\<Title>BS Metro</Title>
-		\<Author>Hassadee Pimsuwan</Author>
-		\<Link>testing_files/bs_metro.wrl</Link>
-	\</Entry>
-	\<Entry>
-		\<Title>Sphere Troupe</Title>
-		\<Author>Hassadee Pimsuwan</Author>
-		\<Link>testing_files/spheretroupe.wrl</Link>
-	\</Entry>
-	\</Playlist>
+	<Entry>
+		<Title>BS Metro</Title>
+		<Author>Hassadee Pimsuwan</Author>
+		<Link>testing_files/bs_metro.wrl</Link>
+	</Entry>
+	<Entry>
+		<Title>Sphere Troupe</Title>
+		<Author>Hassadee Pimsuwan</Author>
+		<Link>testing_files/spheretroupe.wrl</Link>
+	</Entry>
+	</Playlist>
