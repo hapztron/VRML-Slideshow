@@ -41,8 +41,7 @@
 			author = (x[i].getElementsByTagName("Author")[0].childNodes[0].nodeValue);
 			link = (x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue);
 			vrmldata = "<embed width='100%' height='320px' name='vrml_conformance' src='" + link + "' type='model/vrml'></embed>";
-			txt = "Info: " + title + " by " + author ;
-			/* TODO: Data will show until i < x.length in show information div */
+			txt = "<div class='hp_info-main'>" + title + " by " + author + "</div>";
 			document.getElementById("showData").innerHTML = vrmldata + txt;
 		}
 		
@@ -74,18 +73,18 @@
 <body onload="displayData()">
 	<div class="hp_body">
 		<script type="text/javascript">
-			document.write("<h2>" + pagename + "</h2>");
+			document.write("<div class='hp_info-name'><h2>" + pagename + "</h2></div>");
 		</script>
 		<!-- Show VRML Scene and Information of that scene from displayData(); function. -->
 		<div id="showData"></div>
-
-		<!-- Footer -->
-		<hr />
+	<!-- Footer -->
+	<div class="hp_footer">
 		<!-- Twitter's Tweet Botton -->	
 		<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="hapztron">Tweet</a>
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 		<!-- Facebook's Like Botton -->
 		<iframe src="http://www.facebook.com/plugins/like.php?app_id=113980695355311&amp;href=http%3A%2F%2Fwww.hapztron.co.nr%2Fvrml-slide&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:60px;" allowTransparency="true"></iframe>
+	</div>
 	</div>
 </body>
 </html>
