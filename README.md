@@ -25,20 +25,20 @@ Linux: Firefox
 
 Use as slideshow
 ---------
-1. Include 2 JavaScript files to your slide/presentation page.
+First. Include 2 JavaScript files to your slide/presentation page.
 
 Example:
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/vrml-slide.js"></script>
 
-2. Config PATH of your XML file in "vrml-slide.js".
+Second. Config PATH of your XML file in "vrml-slide.js". Comment in the head of that file will explain to you.
 
 Example:
 
 	var file_url = "data/yourxmlfile.xml";
 
-3. Prepare your XML file. This file is contain Duration time for each slide, Title of VRML Scene, Author of that file and URL link to VRML scene.
+Third. Prepare your XML file. This file is contain Duration time for each slide, Title of VRML Scene, Author of that file and URL link to VRML scene.
 
 Create XML file in "data" folder or whatever (Config in vmrl-slide.js file).
 
@@ -62,4 +62,4 @@ Example:
 	</Entry>
 	</Playlist>
 
-4. Run your VRML/X3D Slide! : )
+Forth. Run your VRML/X3D Slide! : )
