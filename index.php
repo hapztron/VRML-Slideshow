@@ -4,8 +4,8 @@
 	<title>VRML-Slide</title>
 	<link rel="shortcut icon" href="img/bs.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
-	<script type="text/javascript" src="js/bs_vrml-slide.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vrml-slide.js"></script>
 	<script type="text/javascript" src="../inc/hp.js"></script>
 </head>
 <body onload="displayData()">
