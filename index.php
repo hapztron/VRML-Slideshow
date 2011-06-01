@@ -37,12 +37,11 @@
 		var i = 0;
 		function displayData()
 		{
-			enabled = (x[i].getElementsByTagName("Enabled")[0].childNodes[0].nodeValue);
 			title = (x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue);
 			author = (x[i].getElementsByTagName("Author")[0].childNodes[0].nodeValue);
 			link = (x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue);
 			vrmldata = "<embed width='100%' height='320px' name='vrml_conformance' src='" + link + "' type='model/vrml'></embed>";
-			txt = "Info: " + enabled + " | " + title + " | " + author + " | " + link ;
+			txt = "Info: " + title + " by " + author ;
 			/* TODO: Data will show until i < x.length in show information div */
 			document.getElementById("showData").innerHTML = vrmldata + txt;
 		}

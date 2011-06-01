@@ -10,18 +10,18 @@ Now, Work in progress.
 Usage
 =============================
 
-VRML-Slide is used to show Web3D (VRML/X3D) Scene as slideshow (e.g. Photo Slideshow). It is require plug-in to show VRML/X3D scene.
+VRML-Slide is used to show Web3D VRML scene as slideshow. It is require plug-in to show VRML/X3D scene.
 
 You have to load VRML/X3D plug-in before open this VRML-Slide: BS Contact - http://bitmanagement.com/en/download
 
-Plug-in browser support
+Plug-in OS, Browser and file type support
 ---------
 
-Windows: Internet Explorer, Firefox, Chrome and Opera.
+Windows: Internet Explorer, Firefox, Chrome and Opera - VRML/X3D (.wrl/.x3d).
 
-Mac OS X: Safari and Webkit.
+Mac OS X: Safari and Webkit - VRML (.wrl) Only.
 
-Linux: Firefox.
+Linux: Firefox
 
 Use as slideshow
 ---------
@@ -49,3 +49,5 @@ Example:
 		<Link>testing_files/spheretroupe.wrl</Link>
 	</Entry>
 	</Playlist>
+
+For next feature. Work in progress.

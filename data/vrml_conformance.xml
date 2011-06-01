@@ -2,7 +2,7 @@
 <Playlist>
 
 	<Page-name>VRML-Conformance</Page-name>
-	<Duration-default>5</Duration-default>
+	<Duration-default>10</Duration-default>
 	
 	<Entry>
 		<Enabled>True</Enabled>
