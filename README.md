@@ -28,7 +28,7 @@ Use as slideshow
 
 1. Prepare your XML file. This file is contain Duration time for each slide, Title of VRML Scene, Author of that file and URL link to VRML scene.
 
-Create or contain this XML file in "data" folder.
+Create XML file in "data" folder.
 
 Example:
 
@@ -39,7 +39,7 @@ Example:
 	<Duration-default>5</Duration-default>
 
 	<Entry>
-		<Title>BS Metro</Title>
+		<Title>BS Metropolis</Title>
 		<Author>Hassadee Pimsuwan</Author>
 		<Link>testing_files/bs_metro.wrl</Link>
 	</Entry>
