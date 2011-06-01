@@ -47,19 +47,21 @@ Example:
 	<?xml version="1.0" ?>
 	<Playlist>
 	
-	<Page-name>VRML-Slide</Page-name>
-	<Duration-default>5</Duration-default>
+		<Page-name>VRML-Slide</Page-name>
+		<Duration-default>5</Duration-default>
 
-	<Entry>
-		<Title>BS Metropolis</Title>
-		<Author>Hassadee Pimsuwan</Author>
-		<Link>testing_files/bs_metro.wrl</Link>
-	</Entry>
-	<Entry>
-		<Title>Sphere Troupe</Title>
-		<Author>Hassadee Pimsuwan</Author>
-		<Link>testing_files/spheretroupe.wrl</Link>
-	</Entry>
+		<Entry>
+			<Title>BS Metropolis</Title>
+			<Author>Hassadee Pimsuwan</Author>
+			<Link>testing_files/bs_metro.wrl</Link>
+		</Entry>
+	
+		<Entry>
+			<Title>Sphere Troupe</Title>
+			<Author>Hassadee Pimsuwan</Author>
+			<Link>testing_files/spheretroupe.wrl</Link>
+		</Entry>
+	
 	</Playlist>
 
 Forth. Run your VRML/X3D Slide! : )
