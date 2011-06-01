@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
 	<script type="text/javascript" src="js/bs_vrml-slide.js"></script>
+	<script type="text/javascript" src="../inc/hp.js"></script>
 </head>
 <body onload="displayData()">
 	<div class="hp_body">
@@ -17,11 +18,9 @@
 	
 		<!-- Footer -->
 		<div class="hp_footer">
-			<!-- Twitter's Tweet Botton -->	
-			<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="hapztron">Tweet</a>
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-			<!-- Facebook's Like Botton -->
-			<iframe src="http://www.facebook.com/plugins/like.php?app_id=113980695355311&amp;href=http%3A%2F%2Fwww.hapztron.co.nr%2Fvrml-slide&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:60px;" allowTransparency="true"></iframe>
+			<script type="text/javascript">
+				social_share();
+			</script>
 		</div>
 	</div>
 </body>
