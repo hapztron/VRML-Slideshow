@@ -9,6 +9,7 @@
 		<Title>BS Metropolis</Title>
 		<Author>Hassadee Pimsuwan</Author>
 		<Link>testing_files/bs_metro.wrl</Link>
+		<Image>testing_files/img/bs_metro.png</Image>
 		<Ref href="testing_files/bs_metro.wrl" />
 	</Entry>
 	
@@ -17,6 +18,7 @@
 		<Title>Unknown</Title>
 		<Author>Unknown</Author>
 		<Link>testing_files/exampleD6.wrl</Link>
+		<Image>testing_files/img/exampled6.png</Image>
 		<Ref href="testing_files/exampleD6.wrl" />
 	</Entry>
 	
@@ -25,6 +27,7 @@
 		<Title>Unknown</Title>
 		<Author>Unknown</Author>
 		<Link>testing_files/exampleD12.wrl</Link>
+		<Image>testing_files/img/exampled12.png</Image>
 		<Ref href="testing_files/exampleD12.wrl" />
 	</Entry>
 

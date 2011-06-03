@@ -3,7 +3,7 @@
  * main.css
  * Hassadee Pimsuwan
  * Create: 29 May 2011
- * Version 1.0 (29 May 2011)
+ * Version 1.1 (2 June 2011)
  * Licensed under GNU GPLv2 (c) Hassadee Pimsuwan
  * For Bitmanagement Software GmbH (VRML Conformance Test Page)
  * ------------------------------------------------------------------------------------
@@ -27,20 +27,20 @@ html, body {
 
 a {
 	margin-top: 2px;
-	text-decoration:none;
+	text-decoration: none;
 	color: #FFFFFF;
 }
 
 /* Link Color */
 a:visited {
 	color: #FFFFFF;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
 	border: 0;
 	color: #FF9933;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .container {
@@ -50,7 +50,7 @@ a:hover, a:focus, a:active {
 }
 
 .header {
-	border-bottom:1px solid #ddd;
+	border-bottom:1px solid #DDDDDD;
 }
 
 .menu {
@@ -181,7 +181,7 @@ pre {
 
 .hp_info-main {
 	position: relative;
-	height: 30px;
+	height: 20px;
 	padding: 0.5em 1.5em;
 	margin: 0.5em auto;
 
@@ -194,13 +194,13 @@ pre {
 	border-radius: 5px;
 
 	/* Gradient Background */
-	background-color: #D4D4D4;
-	background-image: -moz-linear-gradient(top, #FFFFFF, #D4D4D4);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#D4D4D4));
-	background-image: -webkit-linear-gradient(#FFFFFF, #D4D4D4);
-	background-image: -o-linear-gradient(#FFFFFF, #D4D4D4);
-	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#D4D4D4', GradientType=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#D4D4D4)";
+	background-color: #FFFFFF;
+	background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
+	background-image: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
+	background-image: -o-linear-gradient(#FFFFFF, #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#FFFFFF', GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#FFFFFF)";
 }
 
 .hp_info-ordinary {
